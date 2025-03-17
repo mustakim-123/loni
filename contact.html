@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #2c3e50;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feel free to contact us and please share your valuable feedback!</h1>
+        
+        <div class="contact-info">
+            <h2>Informative Website about LONI</h2>
+            <p>AP : Loni Kd., District : Ahilyanagar<br>
+            Pincode : 413713<br>
+            Maharashtra, India</p>
+            <p><strong>Contact </strong><br>
+            +91 7499367170<br>
+            +91 8788441797<br>
+            +91 9511670323<br>
+            +91 9730197543
+        </p>
+            <p><strong>Email:</strong><br>shindeonkar4094@gmail.com</p>
+        </div>
+        
+        <form action="contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="mobile">Mobile No.:</label>
+            <input type="text" id="mobile" name="mobile">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"> 
+                
+            </textarea><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>Thank you for visiting our website!</p>
+        <p>Hope this website has been helpful to you.</p>
+        <p>&copy;  All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>  
+</body>
+</html>

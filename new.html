@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Order Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eae4d3; /* Light gold background */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4d4a42; /* Dark color for title */
+        }
+
+        .orders-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .orders-table th, .orders-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .orders-table th {
+            background-color: #d49a3a; /* Gold color for header */
+            color: white;
+        }
+
+        .orders-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .status-pending {
+            color: #ff9800;
+        }
+
+        .status-completed {
+            color: #4CAF50;
+        }
+
+        .status-cancelled {
+            color: #f44336;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Jewelry Order Management</h1>
+        <table class="orders-table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Email</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#001</td>
+                    <td>Pooja Jadhav</td>
+                    <td>poojajadhav@gmail.com</td>
+                    <td>Gold Necklace</td>
+                    <td>2</td>
+                    <td>$200</td>
+                    <td class="status-pending">Pending</td>
+                </tr>
+                <tr>
+                    <td>#002</td>
+                    <td>Shewta Kuhile</td>
+                    <td>shewta001@gmail.com</td>
+                    <td>Diamond Ring</td>
+                    <td>1</td>
+                    <td>$300</td>
+                    <td class="status-completed">Completed</td>
+                </tr>
+                <tr>
+                    <td>#003</td>
+                    <td>Sonali Ghuge</td>
+                    <td>sonalighuge231@gmail.com</td>
+                    <td>Silver Earrings</td>
+                    <td>3</td>
+                    <td>$150</td>
+                    <td class="status-cancelled">Cancelled</td>
+                </tr>
+                <tr>
+                    <td>#004</td>
+                    <td>Snehal Joshi</td>
+                    <td>snehaljoshi@gmail.com</td>
+                    <td>Gold Bracelet</td>
+                    <td>1</td>
+                    <td>$120</td>
+                    <td class="status-pending">Pending</td>
+                </tr>
+                <tr>
+                    <td>#005</td>
+                    <td>Neha Pawar</td>
+                    <td>nehapawar@gmail.com</td>
+                    <td>Platinum Necklace</td>
+                    <td>1</td>
+                    <td>$500</td>
+                    <td class="status-completed">Completed</td>
+                </tr>
+                <tr>
+                    <td>#006</td>
+                    <td>Ashwini Gadhe</td>
+                    <td>gadheashwini@gmail.com</td>
+                    <td>Gold Ring</td>
+                    <td>2</td>
+                    <td>$220</td>
+                    <td class="status-pending">Pending</td>
+                </tr>
+                <tr>
+                    <td>#007</td>
+                    <td>Gholap Bharti</td>
+                    <td>gholapbharti@gmail.com</td>
+                    <td>Silver Chain</td>
+                    <td>1</td>
+                    <td>$80</td>
+                    <td class="status-completed">Completed</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
